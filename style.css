@@ -3,9 +3,13 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 62.5%;
+}
 
 body{
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 
 .countdown{
@@ -19,19 +23,19 @@ body{
     align-items: space-between;
     justify-content: space-between;
 
-    padding: 100px 0;
+    padding: 10rem 0;
 
 }
 
 .countdown__heading{
     color: #fff;
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: 600;
     text-align: center;
 
 }
 .countdown__heading--small{
-    font-size: 1.8rem;
+    font-size: 2.88rem;
     font-weight: 400;
 }
 
@@ -40,11 +44,11 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    width: 90%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 60rem;
     margin: 0 auto;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 
 }
 
@@ -53,12 +57,46 @@ body{
 }
 
 .stats__int{
-    font-size: 90px;
+    font-size: 9rem;
     line-height: .8;
     
 }
 
 .stats__text{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 60%;
+    }
+
+    .countdown__heading{
+        font-size: 4.2rem;
+    
+    }
+    .countdown__heading--small{
+        font-size: 2.2rem;
+    }
+
+    .countdown__stats{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+    }
+
+    .stats__int{
+        font-size: 7.2rem;     
+    }
+    
+    .stats__text{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    html{
+        font-size: 55%;
+    }
 }
