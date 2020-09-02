@@ -19,9 +19,13 @@ function countdown(){
     const secs = Math.floor(totalsecs) % 60
 
     daysEl.innerHTML = days
-    hoursEl.innerHTML = hours
-    minsEl.innerHTML = mins
-    secsEl.innerHTML = secs
+    hoursEl.innerHTML = formatTime(hours)
+    minsEl.innerHTML = formatTime(mins)
+    secsEl.innerHTML = formatTime(secs)
+}
+
+function formatTime(time) {
+    return time < 10 ? `0${time}` : time
 }
 
 
