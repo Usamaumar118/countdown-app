@@ -5,8 +5,57 @@
 }
 
 body{
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
+.countdown{
+    min-height: 100vh;
+    background: url("./countdown-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+
+    padding: 100px 0;
+
+}
+
+.countdown__heading{
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.countdown__heading--small{
+    font-size: 1.8rem;
+}
+
+.countdown__stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #fff;
+
+}
+
+.stats__item{
+    text-align: center;
+}
+
+.stats__int{
+
+}
+
+.stats__text{
 
 
+
+}
